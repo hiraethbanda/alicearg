@@ -3,15 +3,45 @@
 <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/puzzle.css" />
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="main" style="height: 100vh">
-            <p>deu certo!</p>
+        <div id="block">
+            <img src="gif.gif" alt="alice" id="gif" />
+        </div>
+
+        <div id="main">
+            <div id="content">
+                <p>conteudo</p>
+                <div id="link"><a href="/index.html">Retornar</a></div>
+            </div>
+            <div id="senhaDiv"><span id="senha">1. r</span></div>
         </div>
     </div>
 </body>
-
 </html>
+
+<style>
+
+#wrapper {
+    background-image: url("/universo/bg.gif");
+    background-position: 50%;
+    padding: 0px;
+    height: 100vh;
+}
+
+#content{
+    text-align: left;
+}
+
+a:link {
+    color: rgb(24, 32, 58);
+}
+
+a:visited {
+    color: rgb(24, 32, 58);
+}
+
+</style>
