@@ -56,15 +56,17 @@ function check() {
         "futatsunokokoro": "...revivendo assuntos pra outra vida. E você? Onde está?",
         "distantedetudo": "https://youtube.com/[url]"
     };
-    const commandsTroll = {
-        "doiscoracoes": "Onde estamos?", // pequena excessao. botei aqui pq nao é a lagarta que fala
-        
+    const dicas = {
+        "coracoes": "1234567890",
+        "doiscoracoes": "Onde estamos?"
+    }
+    const commandsTroll = {        
         "six": "seven",
         "gato": "miau",
         "bora": "bill",
         "ai": "que delicia cara",
         "pudim": "https://pudim.com.br"
-    }
+    };
 
     // add
     history.innerHTML += `<div class="historyLine"><span class="prefix">></span><span class="content">${value}</span></div>`;;
@@ -103,6 +105,15 @@ function check() {
             `<div class="answerLine">
             <span id="answerPrefix">
                 lagarta: 
+            </span>
+                ${commands[value]}
+        </div>`;
+    }
+    else if (value in dicas) {
+        history.innerHTML +=
+            `<div class="answerLine">
+            <span id="answerPrefix">
+                Dica: 
             </span>
                 ${commands[value]}
         </div>`;
