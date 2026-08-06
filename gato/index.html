@@ -3,16 +3,47 @@
 <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/puzzle.css" />
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="main" style="height: 100vh">
-            <p>voce chegou antes do esperado. sinta-se especial!</p>
-            <p>(ainda nao acabei de fazer a pagina)</p>
+        <div id="block">
+            <img src="gif.gif" alt="alt" id="gif" />
+        </div>
+
+        <div id="main">
+            <div id="content">
+                <p>Cabe a mim decidir pra onde vou.</p>
+                <div id="link"><a href="/index.html">Retornar</a></div>
+            </div>
+
+            <div id="senhaDiv">
+                <span id="senha">4. i</span>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+
+<style>
+    #wrapper {
+        background-image: url("/gato/bg.png");
+        background-position: 30%;
+        background-size: 2000px;
+        height: 100vh;
+    }
+
+    #content {
+        text-align: left;
+    }
+
+    a:link {
+        color: rgb(221, 127, 166);
+    }
+
+    a:visited {
+        color: rgb(221, 127, 166);
+    }
+</style>
