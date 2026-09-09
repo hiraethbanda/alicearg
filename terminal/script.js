@@ -59,7 +59,7 @@ function check() {
     const dicas = {
         "coracoes": "1234567890",
         "doiscoracoes": "Onde estamos?"
-    }
+    };
     const commandsTroll = {        
         "six": "seven",
         "gato": "miau",
