@@ -106,7 +106,7 @@ function check() {
             <span id="answerPrefix">
                 Dica: 
             </span>
-                ${commands[value]}
+                ${dicas[value]}
         </div>`;
     }
     else if (value in commandsTroll) {
