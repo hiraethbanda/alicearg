@@ -43,7 +43,7 @@ const ans = document.getElementById("answer");
 
 
 
-function check() {
+async function check() {
     let value = document.getElementById("userInput").value;
     const history = document.getElementById("history");
     const wrapperInput = document.getElementById("wrapperInput");
