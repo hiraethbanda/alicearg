@@ -55,11 +55,39 @@ function check() {
     // add
     history.innerHTML += `<div class="historyLine"><span class="prefix">></span><span class="content">${value}</span></div>`;;
 
-    fetch("/api/check", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ value })
-    });
+    if (value === "clear") {
+        history.innerHTML = "";
+    } 
+    else if (value === "help") {
+        history.innerHTML +=
+        `<p id="answerPrefix">
+            As respostas aceitas não contém acentos, letras maiúsculas ou pontuação. <br>
+            Tente fazer perguntas. <br><br>
+            Boa sorte.
+            <br><br>
+            help: Mostra esta mensagem. <br>
+            clear: Limpa o histórico. <br>
+            <p id="msgHelp">Anoitecer </p>
+        </p>`;
+    } 
+    else {
+        const res = await fetch("/api/check", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ value })
+        });
+        const { result } = await res.json();
+
+        if (result?.type === "resposta") {
+            history.innerHTML += `<div class="answerLine"><span id="answerPrefix">lagarta: </span>${result.text}</div>`;
+        } 
+        else if (result?.type === "dica") {
+            history.innerHTML += `<div class="answerLine"><span id="answerPrefix">Dica: </span>${result.text}</div>`;
+        } 
+        else if (result?.type === "troll") {
+            history.innerHTML += `<div class="answerLine">${result.text}</div>`;
+        }
+    }
 
     document.getElementById("userInput").value = "";
     showCaret();
