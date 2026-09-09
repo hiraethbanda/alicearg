@@ -42,23 +42,36 @@ apov:
   futatsu no kokoro
   lagarta: (...resolvendo assuntos pra outra vida. e voce, onde esta?)
   distante de tudo
-  lagarta: ultima parte do login
+  lagarta: ultima parte do login (video do yt)
+    video yt:
+        1 minuto quieto de um espelho no centro de uma construcao abandonada com 7 velas ao redor e uma folha colada no meio contendo:
+            "8"
+            o alfabeto inteiro
+            default pfp ig
  
 ordem dos posts:
-1 - alice - Adalheids (user)
-2 - rdc - b
-3 - seus olhos - r
-4 - a casa - i
-5 - who am i - g
-6 - sunshine - i
-7 - meia noite - d
-8 - apov - 12
+    1 - alice            - ad
+    2 - rdc              - al
+    3 - seus olhos       - .
+    4 - a casa           - he
+    5 - who am i         - i
+    6 - sunshine         - ds
+    7 - meia noite       - I
+    8 - apov             - G
 
 paginas:
-    diferente - alice
-    gato - a casa
-    idontwannaslowdance - who am i
-    quarentaetres - meia noite
-    radiacao - sunshine
-    terminal - apov
-    universo - seus olhos
+    diferente               - alice
+    vinteequatro            - rdc
+    universo                - seus olhos
+    gato                    - a casa
+    idontwannaslowdance     - who am i
+    radiacao                - sunshine
+    quarentaetres           - meia noite
+    terminal                - apov
+
+conta:
+    post com data de lancamento
+    fotos do ensaio da capa
+    * EXTRAS
+        coisas descartadas talvez?
+    * mais lore

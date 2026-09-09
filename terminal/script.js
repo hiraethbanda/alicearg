@@ -85,15 +85,6 @@ function check() {
             
             help: Mostra esta mensagem. <br>
             clear: Limpa o histórico. <br>
-            color: Troca a cor do texto. <br> 
-            <br>
-                <span id="options">
-                    color [opção]
-                </span>
-                <br> 
-                <span id="options">
-                    [R]ed, [W]ite, [G]reen, [P]ink, [B]lue
-                </span><br>
                 
             <p id="msgHelp">Anoitecer </p>
         </p>`
