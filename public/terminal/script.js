@@ -71,6 +71,7 @@ function check() {
     // add
     history.innerHTML += `<div class="historyLine"><span class="prefix">></span><span class="content">${value}</span></div>`;;
 
+    // add resposta
     // casos especiais
     if (value === "clear") {
         history.innerHTML = "";
