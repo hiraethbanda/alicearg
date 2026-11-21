@@ -27,6 +27,7 @@ export async function onRequestPost(context) {
         result = { type: "resposta", text: commands[input] };
         if (input === "distantedetudo"){
             acerto = true;
+            result.element = `<a href="https://youtube.com">asd</a>`;
         }
     }
     else if (input in dicas){

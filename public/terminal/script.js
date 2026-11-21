@@ -75,8 +75,10 @@ async function check() {
 
         if (result?.type === "resposta") {
             history.innerHTML += `<div class="answerLine"><span id="answerPrefix">lagarta: </span>${result.text}</div>`;
-            if (acerto === true){
-                document.getElementById("link").style.display = "block";
+            if (acerto === true && result?.element){
+                const link = document.getElementById("link");
+                link.innerHTML = result.element;
+                link.style.display = "block";
             }
         } 
         else if (result?.type === "dica") {
