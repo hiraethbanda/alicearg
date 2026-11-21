@@ -41,8 +41,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const ans = document.getElementById("answer");
 
-
-
 async function check() {
     let value = document.getElementById("userInput").value;
     const history = document.getElementById("history");
@@ -50,7 +48,7 @@ async function check() {
 
     // sanitizar input
     value = value.toLowerCase();
-    value = value.replace(/[^a-z]/g, "");
+    value = value.replaceAll(/[^a-z]/g, "");
     
     // add
     history.innerHTML += `<div class="historyLine"><span class="prefix">></span><span class="content">${value}</span></div>`;;
