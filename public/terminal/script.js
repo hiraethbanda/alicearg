@@ -38,9 +38,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // check
-
-const ans = document.getElementById("answer");
-
 async function check() {
     let value = document.getElementById("userInput").value;
     const history = document.getElementById("history");
@@ -74,12 +71,12 @@ async function check() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ value })
         });
-        const { result, acerto } = await res.json();
+        let { result, acerto } = await res.json();
 
         if (result?.type === "resposta") {
             history.innerHTML += `<div class="answerLine"><span id="answerPrefix">lagarta: </span>${result.text}</div>`;
-            if (acerto == true){
-                a.style.display.innerHTML = block;
+            if (acerto === true){
+                document.getElementById("link").style.display = "block";
             }
         } 
         else if (result?.type === "dica") {

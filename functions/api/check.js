@@ -20,11 +20,12 @@ export async function onRequestPost(context) {
     const { value } = await context.request.json();
     const input = String(value || "").toLowerCase().replace(/[^a-z]/g, ""); // sanitizar
 
-    let result, acerto = null;
-    
+    let result = null;
+    let acerto = false;
+
     if (input in commands){
         result = { type: "resposta", text: commands[input] };
-        if (input == "distantedetudo"){
+        if (input === "distantedetudo"){
             acerto = true;
         }
     }
@@ -35,7 +36,7 @@ export async function onRequestPost(context) {
         result = { type: "troll", text: commandsTroll[input] };
     }
 
-    return new Response(JSON.stringify({ result }), {
+    return new Response(JSON.stringify({ result, acerto }), {
         headers: { "Content-Type": "application/json" }
     });
 }
