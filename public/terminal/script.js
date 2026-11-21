@@ -74,10 +74,13 @@ async function check() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ value })
         });
-        const { result } = await res.json();
+        const { result, acerto } = await res.json();
 
         if (result?.type === "resposta") {
             history.innerHTML += `<div class="answerLine"><span id="answerPrefix">lagarta: </span>${result.text}</div>`;
+            if (acerto == true){
+                a.style.display.innerHTML = block;
+            }
         } 
         else if (result?.type === "dica") {
             history.innerHTML += `<div class="answerLine"><span id="answerPrefix">Dica: </span>${result.text}</div>`;

@@ -97,6 +97,12 @@ header {
     display: none;
 }
 
+a {
+    display: none;
+    color: white;
+
+}
+
 @media all and (max-width: 700px) {
     body, #userInput {
         font-size: 17px;
