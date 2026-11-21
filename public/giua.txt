@@ -53,11 +53,11 @@ ordem dos posts:
     1 - alice            - ad
     2 - rdc              - al
     3 - seus olhos       - .
-    4 - a casa           - he
-    5 - who am i         - i
-    6 - sunshine         - ds
-    7 - meia noite       - I
-    8 - apov             - G
+    4 - a casa           - h
+    5 - who am i         - e
+    6 - sunshine         - i
+    7 - meia noite       - d
+    8 - apov             - s
 
 paginas:
     diferente               - alice

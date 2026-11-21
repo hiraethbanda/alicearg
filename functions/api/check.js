@@ -2,7 +2,7 @@ const commands = {
     "ondeestavoce": "Estou em 30.465633, 130.497257, <br> na direção em que o sol nasce...",
     "osolseposeondeestavoce": "Estou em 30°27'56.3'N 130°29'50.1'E, <br> na direção onde o sol nasce...",
     "futatsunokokoro": "...revivendo assuntos pra outra vida. E você? Onde está?",
-    "distantedetudo": "https://youtube.com/[url]"
+    "distantedetudo": "8. s\nhttps://youtube.com/[url]"
 };
 const dicas = {
     "coracoes": "1234567890",
