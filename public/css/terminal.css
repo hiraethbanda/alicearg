@@ -97,10 +97,12 @@ header {
     display: none;
 }
 
-a {
+#link {
     display: none;
-    color: white;
+}
 
+a {
+    color: white;
 }
 
 @media all and (max-width: 700px) {
