@@ -47,7 +47,7 @@ apov:
         1 minuto quieto de um espelho no centro de uma construcao abandonada com 7 velas ao redor e uma folha colada no meio contendo:
             "8"
             o alfabeto inteiro
-            default pfp ig
+            "/login"
  
 ordem dos posts:
     1 - alice            - ad

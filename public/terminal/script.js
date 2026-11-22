@@ -56,7 +56,6 @@ async function check() {
     else if (value === "help") {
         history.innerHTML +=
         `<p id="answerPrefix">
-            As respostas aceitas não contém acentos, letras maiúsculas ou pontuação. <br>
             Tente fazer perguntas. <br><br>
             Boa sorte.
             <br><br>
