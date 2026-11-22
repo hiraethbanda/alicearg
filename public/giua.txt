@@ -48,7 +48,7 @@ apov:
             "8"
             o alfabeto inteiro
             "/login"
- 
+
 ordem dos posts:
     1 - alice            - ad
     2 - rdc              - al
